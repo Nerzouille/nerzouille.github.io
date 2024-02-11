@@ -142,29 +142,59 @@ button:hover {
     justify-content: center;
 }
 
+.about_me {
+    padding: 4%;
+    border-radius: 10px;
+    background-color: #05204A;
+    color: #E1E2EF;
+}
+
+
+
 @media only screen and (max-width:700px) {
 
-  nav ul {
-    width: 100%;
-    background: linear-gradient(#ff54a2, #ff575a);
-    position: absolute;
-    top: 75px;
-    right: 0;
-    z-index: 2;
-  }  
-  nav ul li {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  } 
-  nav ul li a {
-    color: #fff;
-  } 
-  .menu {
-    display: block;
-  }
-  #menu {
-    overflow: hidden;
-    transition: 0.25s;
-  }
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }  
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } 
+    nav ul li a {
+        color: #fff;
+    } 
+    .menu {
+        display: block;
+    }
+    #menu {
+        overflow: hidden;
+        transition: 0.25s;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2 {
+        flex-direction: column;
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .profile_image {
+        max-width: 60%;
+    }
+    .color-rect {
+        top: 10%;
+        border-radius: 15px;
+        height: 68%;
+        width: 150%;
+        transform: translateX(75px);
+    }
 }
