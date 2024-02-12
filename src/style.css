@@ -86,6 +86,10 @@ button {
     cursor: pointer;
     transition: width 0.25s;
 }
+button a {
+    color: #fff;
+    text-decoration: none;
+}
 button img{
     height: 15px;
     display: none;
