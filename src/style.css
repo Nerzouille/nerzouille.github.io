@@ -149,14 +149,36 @@ button:hover {
     color: #E1E2EF;
 }
 
+#dark {
+    min-height: 100%;
+    width: 100%;
+    opacity: 78%;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    transition: 0.25s;
+}
 
 @media screen and (max-width: 700px) {
+
+    .icon {
+        width: 40px;
+    }
+    .col-1 h2 {
+        font-size: 250%;
+    }
+    .col-1 h3 {
+        font-size: 25px;
+    }
+    .col-1 p {
+        font-size: 13px;
+    }
 
     nav {
         text-align: left;
     }
     nav ul {
-        height: 100%;
+        min-height: 100%;
         width: 100%;
         background: linear-gradient(#fc0a7e, #ff575a);
         position: absolute;
