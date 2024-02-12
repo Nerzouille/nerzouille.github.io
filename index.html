@@ -4,10 +4,11 @@
 	<meta charset="utf-8"/>
     <link rel="icon" href="./assets/icon.png" />
     <title>Noa Smoter</title>
-    <link rel="stylesheet" href="./src/style.css" />
     <script src="./src/script.js" defer></script>
+    <link rel="stylesheet" href="./src/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body onresize="resize()">
 	<div class="container">
 		<div class="navbar">
 			<img src="./assets/icon.png" class="icon">
@@ -19,7 +20,7 @@
 					<li><a href="">SOME TXT</a></li>
 				</ul>
 			</nav>
-			<img src="./assets/menu.png" class="menu" onclick="toggle()">
+			<img src="./assets/menu.png" class="menu" id="icon-menu" onclick="toggle()">
 		</div>
 
 		<div class="row">
@@ -39,6 +40,8 @@
 			<h3>About me:</h3>
 			<p>Hi !<br>I'm a 17 old Epitech Student</p>
 		</div> -->
+
+		<div class="darker"></div>
 
 		<div class="links">
 			<img src="assets/in.png">
