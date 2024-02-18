@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8"/>
-    <link rel="icon" href="./assets/icon.png" />
+	<meta charset="utf-8">
+    <link rel="icon" href="./assets/icon.png">
     <title>Noa Smoter</title>
     <script src="./src/script.js" defer></script>
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/projects.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body onresize="resize()">
 	<div class="container">
 		<div class="navbar">
-			<img src="./assets/icon.png" class="icon">
+			<a href="index.html"><img src="./assets/icon.png" class="icon" alt="icon logo nerzouille webpage"></a>
 			<nav>
 				<ul id="menu">
-					<li><a href="">SOME TXT</a></li>
+					<li><a href="./src/me.html">About Me</a></li>
 					<li><a href="">Mon CV</a></li>
-					<li><a href="">SOME TXT</a></li>
-					<li><a href="">SOME TXT</a></li>
+					<li><a href="#projects">My Projects</a></li>
+					<li><a href="">Contact Me</a></li>
 				</ul>
 			</nav>
-			<img src="./assets/menu.png" class="menu" id="icon-menu" onclick="toggle()">
+			<img src="./assets/menu.png" class="menu" id="icon-menu" alt="toggle menu icon" onclick="toggle()">
 		</div>
 
 		<div class="darker" id="dark"></div>
@@ -30,26 +31,78 @@
 				<h2 class="name">Noa SMOTER<br>Portefolio</h2>
 				<h3>Epitech Student</h3>
 				<p>Promo 2028</p>
-				<button type="button"><a href="src/my_projects.html">My Projects </a><a href="src/my_projects.html"><img src="./assets/arrow.png"></a></button>
+				<button type="button"><a href="#projects">My Projects </a><a href="#projects"><img src="./assets/arrow.png"></a></button>
 			</div>
 			<div class="col-2" id="my_pp">
-        		<img src="./assets/ppi.png" alt="Noa Picture" class="profile_image">
+        		<img src="./assets/ppi.png" alt="Noa Picture" class="profile_image" alt="Nerzouille Profile Picture">
         		<div class="color-rect"></div>
 			</div>
 		</div>
 
-<!-- 		<div class="about_me">
-			<h3>About me:</h3>
-			<p>Hi !<br>I'm a 17 old Epitech Student</p>
-		</div> -->
+		<a href="#me" class="my_arrow"><img src="./assets/arrow.png"></a>
 
-		<div class="darker"></div>
+		<div class="about_me" id="me">
+			<h3>About me:</h3>
+			<p>Hi !<br>I'm a 17 old Epitech Student. <br><br><br>    WORK IN PROGRESS   </p>
+		</div>
+
+		<a href="#projects"><h2>My Projects</h2></a>
+		<div class="projects" id="projects">
+			<div class="card">
+				<h3>Sokoban</h3>
+				<img src="./assets/sokoban.jpg" alt="image projet: nom projet">
+				<div class="card-info">
+					<h4 class="wlang">Langages utilisées:</h4>
+					<p>Re-création du jeu Sokoban en C dans le terminal à l'aide de la librairie ncurses.</p>
+					<h4 class="wlang">Langages utilisés:</h4>
+					<p class="lang">langages chefff</p>
+				</div>
+			</div>
+			<div class="card">
+				<h3>Duck Hunt</h3>
+				<img src="./assets/duck.png" alt="image projet: nom projet">
+				<div class="card-info">
+					<p>Re-création d'un jeu type Duck Hunt dans l'univers de Five Night At Feddy's en C grâce à la librairie CSFML.</p>
+					<h4 class="wlang">Langages utilisés:</h4>
+					<p class="lang">langages chefff</p>
+				</div>
+			</div>
+			<div class="card">
+				<h3>My Radar</h3>
+				<img src="./assets/planes.png" alt="image projet: nom projet">
+				<div class="card-info">
+					<p>Simulateur de trafic aérien 2D en C à partir d'une map passée en paramètre. Projet graphique réalisé avec la lib CSFML.</main></main></p>
+					<h4 class="wlang">Langages utilisés:</h4>
+					<p class="lang">langages chefff</p>
+				</div>
+			</div>
+			<div class="card">
+				<h3>My Navy</h3>
+				<img src="./assets/mynavy.jpg" alt="image projet: nom projet">
+				<div class="card-info">
+					<p>Battaille navale entre deux interfaces de ligne de commande réalisé en C.</p>
+					<h4 class="wlang">Langages utilisés:</h4>
+					<p class="lang">langages chefff</p>
+				</div>
+			</div>
+			<div class="card">
+				<h3>Mini-Projets Python / Web</h3>
+				<img src="./assets/lab.png" alt="image projet: nom projet">
+				<div class="card-info">
+					<p>De nombreux petits projets et jeux réalisés en python, comme un labyrinthe, la recréation d'un jeu Bomberman, un morpion contre bot,...
+						Et web avec un ENT.</p>
+					<h4 class="wlang">Langages utilisés:</h4>
+					<p class="lang">langages chefff</p>
+				</div>
+			</div>
+		</div>
+
 
 		<div class="links">
-			<img src="./assets/in.png">
-			<img src="./assets/git.png">
-			<img src="./assets/email.png">
-			<img src="./assets/discord.png">
+			<img src="./assets/in.png" alt="linkedin icon">
+			<img src="./assets/git.png" alt="github icon">
+			<a href="mailto:noalink38@gmail.com"><img src="./assets/email.png" alt="email icon">
+			<img src="./assets/discord.png" alt="discord icon">
 		</div>
 	</div>
 </body>
