@@ -24,6 +24,6 @@ function toggle() {
 		menu.style.maxWidth = "0px";
 		icon_menu.style.background = 'none';
 		darker.style.background = 'none';
-		darker.style.zIndex = "10";
+		darker.style.zIndex = "-10";
 	}
 }
