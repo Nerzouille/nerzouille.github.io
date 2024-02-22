@@ -16,6 +16,12 @@ function resize() {
 	}
 }
 
+function toggler() {
+	if (menu.style.maxWidth == "180px") {
+		toggle();
+	}
+}
+
 function toggle() {
 	if (menu.style.maxWidth == "0px") {
 		menu.style.maxWidth = "180px";
