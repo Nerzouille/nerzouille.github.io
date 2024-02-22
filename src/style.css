@@ -161,16 +161,22 @@ button:hover {
 }
 
 .about_me {
-    margin: 3% 0 3% 0;
+    margin: 3% 0 10% 0;
     padding: 4%;
     border-radius: 10px;
     background-color: #05204A;
     color: #E1E2EF;
 }
-
 .about_me a {
     color: #E1E2EF;
 }
+.cv_dest {
+    text-decoration: underline;
+}
+.cv_dest:hover {
+    color: #fb5283;
+}
+
 
 #dark {
     position: fixed;
@@ -245,8 +251,13 @@ button:hover {
         transform: translateX(75px);
     }
 
+
+    .my_arrow{
+        display: none;
+    }
     .about_me {
-        margin: 27px 0 27px 0;
+        margin-top: 80px;
+        margin-bottom: 60px;
     }
 }
 

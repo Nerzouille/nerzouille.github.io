@@ -42,10 +42,60 @@ a {
     margin: 2%;
 }
 
-.card img:hover {
+.card:hover .ext {
     border-radius: 0;
     height: 165px;
     /* width: 90%; */
+}
+
+h4 {
+    margin-top: 2px;
+}
+
+.lang {
+    margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lang img {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-left: 3%;
+    margin-right: 10px;
+}
+
+.git {
+    opacity: 0;
+    margin-top: auto;
+    margin-right: 3%;
+    margin-left: auto;
+    margin-bottom: auto;
+    transition: 0.25s;
+}
+
+.YT {
+    margin-top: 10px;
+}
+
+.vid .vidlink {
+    margin-top: 2px;
+    justify-content: flex-start;
+    aspect-ratio: auto;
+    height: 20px;
+    width: auto;
+    transform: translateY(-30px);
+}
+
+.card:hover .git {
+    display: flex;
+    opacity: 100%;
+}
+
+.card:hover .vid .vidlink {
+    height: 40px;
+    transform: translateY(0px);
 }
 
 @media screen and (max-width: 700px) {
@@ -53,5 +103,9 @@ a {
     .card {
         width: 100%;
         padding: 20px   ;
+    }
+
+    .git {
+        opacity: 100%;
     }
 }
