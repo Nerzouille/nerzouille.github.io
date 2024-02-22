@@ -168,11 +168,15 @@ button:hover {
     color: #E1E2EF;
 }
 
+.about_me a {
+    color: #E1E2EF;
+}
+
 #dark {
+    position: fixed;
     min-height: 100%;
     width: 100%;
     opacity: 78%;
-    position: absolute;
     top: 75px;
     right: 0;
     z-index: -10;
@@ -181,17 +185,14 @@ button:hover {
 
 @media screen and (max-width: 700px) {
 
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
     .icon {
         width: 40px;
-    }
-    .col-1 h2 {
-        font-size: 250%;
-    }
-    .col-1 h3 {
-        font-size: 25px;
-    }
-    .col-1 p {
-        font-size: 13px;
     }
 
     nav {
@@ -201,10 +202,10 @@ button:hover {
         min-height: 100%;
         width: 100%;
         background: linear-gradient(#fc0a7e, #ff575a);
-        position: absolute;
+        position: fixed;
         top: 75px;
         right: 0;
-        z-index: 2;
+        z-index: 15;
     }
     nav ul li {
         display:flex;
@@ -242,6 +243,10 @@ button:hover {
         height: 68%;
         width: 150%;
         transform: translateX(75px);
+    }
+
+    .about_me {
+        margin: 27px 0 27px 0;
     }
 }
 

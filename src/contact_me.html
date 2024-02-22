@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+    <link rel="icon" href="../assets/icon.png">
+    <title>Noa Smoter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
+    <script src="../src/script.js" defer></script>
+	<script src="https://web3forms.com/client/script.js" async defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onresize="resize()">
+	<div class="container">
+		<div class="navbar">
+			<a href="../index.html"><img src="../assets/icon.png" class="icon" alt="icon logo nerzouille webpage"></a>
+			<nav>
+				<ul id="menu">
+					<li><a href="../index.html#me">About Me</a></li>
+					<li><a href="../index.html#projects">My Projects</a></li>
+					<li><a href="../assets/CV - Noa SMOTER.pdf" target=”_blank>Mon CV</a></li>
+					<li><a href="../index.html">Home</a></li>
+				</ul>
+			</nav>
+			<img src="../assets/menu.png" class="menu" id="icon-menu" alt="toggle menu icon" onclick="toggle()">
+		</div>
+
+		<div class="row">
+			<div class="coll-1" id="profile">
+				<form action="https://api.web3forms.com/submit" method="POST">
+					<input type="hidden" name="access_key" value="e756d866-cc2e-40d8-bed9-4a334fcab90c">
+					<input type="text" name="name" requiredp placeholder="Name:">
+					<input type="email" name="email" required placeholder="Email:">
+					<textarea name="message" required placeholder="Message:"></textarea>
+					<button class="button" type="submit">Envoyer<img src="../assets/arrow.png"></button>
+				</form>
+			</div>
+			<div class="coll-2" id="my_pp">
+				<h3>Me contacter:</h3>
+				<div class="moi">
+					<p>Si mon profil vous intéresse,
+						<br>Vous pouvez me contacter par mail via le formulaire si contre,
+						<br>Je vous répondrai au plus vite.</p>
+					<p class="sign">SMOTER Noa.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="darker" id="dark" onclick="toggle()"></div>
+
+		<div class="links">
+			<a href="https://www.linkedin.com/in/noa-smoter/" target=”_blank”><img src="../assets/in.png" alt="linkedin icon"></a>
+			<a href="https://github.com/Nerzouille" target=”_blank”><img src="../assets/git.png" alt="github icon"></a>
+			<a href="mailto:noalink38@gmail.com"><img src="../assets/email.png" alt="email icon"></a>
+			<img src="../assets/discord.png" alt="discord icon">
+		</div>
+	</div>
+</body>
+</html>

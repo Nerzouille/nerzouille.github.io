@@ -10,6 +10,9 @@ function resize() {
 	}
 	else {
 		menu.style.maxWidth = "10000px";
+		icon_menu.style.background = 'none';
+		darker.style.background = 'none';
+		darker.style.zIndex = "-10";
 	}
 }
 
