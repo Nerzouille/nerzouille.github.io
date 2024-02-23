@@ -7,6 +7,8 @@ resize();
 function resize() {
 	if (screen.width <= 700) {
 		menu.style.maxWidth = "0px";
+		darker.style.background = 'none';
+		darker.style.zIndex = "-10";
 	}
 	else {
 		menu.style.maxWidth = "10000px";
